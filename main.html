@@ -119,9 +119,10 @@
     var i = 0;
     function addActive {
       var element = allImages[i];
-      if (element) = element.classList.add("active");
+      if (element) { element.classList.add("active");
       i++;
      }
+    }
 
     function debounce (func, wait = 20, immediate = true){
       var timeout;
